@@ -1,0 +1,1626 @@
+
+
+
+
+HƯỚNG DẪN SỬ DỤNG HỆ THỐNG B2B
+
+
+
+.
+
+
+
+
+
+
+
+
+
+1. Chủ đề phổ biến
+
+
+
+Phần này tổng hợp các câu hỏi người dùng thường gặp nhất trên Portal B2B, tập trung vào đơn hàng, hoàn/hủy, đối soát, tài khoản nhận tiền, payment link, lỗi thanh toán và cấu hình phí.
+
+
+
+
+
+1.1. Quản lý đơn hàng
+
+
+
+
+
+Làm thế nào để tôi tìm kiếm giao dịch và xem thông tin giao dịch?
+
+
+
+Trả lời: Vào menu Quản lý đơn hàng > Danh sách đơn hàng. Tại đây hệ thống hiển thị toàn bộ đơn của Merchant, gồm mã đơn BK, mã đơn MRC, thời gian tạo/cập nhật, trạng thái đơn, giá trị đơn, tổng phí, khuyến mại, số tiền thực nhận, phương thức thanh toán, mã chi nhánh/cửa hàng/nhân viên/sản phẩm, thông tin khách hàng và ghi chú.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Mở menu “Quản lý đơn hàng” và chọn “Danh sách đơn hàng”.
+
+
+
+
+
+
+
+Tìm nhanh bằng mã đơn Baokim/MRC, mã chi nhánh, cửa hàng, nhân viên, sản phẩm hoặc tên khách hàng.
+
+
+
+
+
+
+
+Có thể lọc theo thời gian hoặc bấm “Bộ lọc khác” để tìm nâng cao.
+
+
+
+
+
+
+
+Muốn xem chi tiết, bấm vào mã đơn hàng BK để mở màn hình Chi tiết đơn hàng.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Màn hình chi tiết đơn hàng cho phép kiểm tra đầy đủ thông tin nhà bán hàng, khách hàng, đơn hàng, sản phẩm và chi tiết thanh toán.
+
+
+
+
+
+
+
+Với đơn trả góp thẻ tín dụng sẽ có thêm thông tin trả góp; đơn BNPL sẽ có thêm thông tin BNPL.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tôi duyệt hoặc từ chối đơn hàng ở đâu?
+
+
+
+Trả lời: Có thể duyệt hoặc từ chối đơn theo 2 cách: ngay tại màn hình Quản lý đơn hàng hoặc trong màn hình Chi tiết đơn hàng.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Cách 1 – tại Danh sách đơn hàng: lọc trạng thái đơn = “Chờ duyệt”, sau đó bấm “Duyệt đơn” hoặc “Từ chối”.
+
+
+
+
+
+
+
+Cách 2 – tại Chi tiết đơn hàng: mở mã đơn BK, sau đó bấm nút “Duyệt” hoặc “Từ chối”.
+
+
+
+
+
+
+
+Với hai cách, hệ thống đều hiện hộp xác nhận để bạn bấm “Xác nhận” hoặc “Huỷ”.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Chỉ những đơn ở trạng thái chờ duyệt mới thực hiện được thao tác duyệt/từ chối.
+
+
+
+
+
+
+
+Nếu cần kiểm tra kỹ thông tin trước khi xử lý, nên mở Chi tiết đơn hàng rồi mới thao tác.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.2. Hoàn/hủy đơn hàng
+
+
+
+
+
+Tôi hoàn hoặc hủy đơn như thế nào?
+
+
+
+Trả lời: Thao tác hoàn hủy phụ thuộc loại giao dịch như sau: hoàn đơn trả thẳng, hoàn đơn trả chậm BNPL và huỷ đơn trả góp.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+1.   Mở Quản lý đơn hàng, bấm vào mã đơn BK để vào Chi tiết đơn hàng.
+
+
+
+
+
+
+
+Đơn trả thẳng: bấm “Hoàn”, nhập số tiền cần hoàn, nhập lý do bắt buộc, rồi bấm “Xác nhận”.
+
+
+
+
+
+
+
+Đơn BNPL: bấm “Hoàn”, nhập lý do bắt buộc, rồi bấm “Xác nhận”.
+
+
+
+
+
+
+
+Đơn trả góp: bấm “Hoàn”, chọn loại huỷ (Huỷ CĐTG hoặc Huỷ CĐTG và Hoàn thanh toán), nhập lý do, rồi bấm “Xác nhận”.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Hệ thống mặc định số tiền hoàn tối đa còn lại mà Merchant được hoàn đối với đơn trả thẳng.
+
+
+
+
+
+
+
+Merchant cần bảo đảm số dư khả dụng đủ để hoàn tiền.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Khách hàng nhận được tiền hoàn sau bao lâu?
+
+
+
+Trả lời: list thời gian nhận tiền hoàn theo các phương thức (bổ sung sau)
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Bạn nên theo dõi trạng thái đơn và biến động số dư sau khi hoàn.
+
+
+
+
+
+
+
+Nếu cần mốc thời gian chính xác theo từng phương thức thanh toán, nên liên hệ Baokim hoặc bộ phận vận hành đang quản lý hợp đồng.
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.3. Đối soát/quyết toán đơn hàng
+
+
+
+
+
+Bao giờ tôi nhận được quyết toán đơn hàng?
+
+
+
+Trả lời: Chu kỳ quyết toán, quy định tạm giữ và các thông tin quyết toán là do thông tin cấu hình theo hợp đồng. Vì vậy không có một mốc thời gian chung áp dụng cho mọi Merchant trong tài liệu này.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Vào Cài đặt > Cấu hình đối soát – quyết toán.
+
+
+
+
+
+
+
+Mở tab “Quyết toán” để xem phương thức, chu kỳ quyết toán và quy định tạm giữ nếu có.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Thông tin ở tab Quyết toán là dữ liệu cấu hình theo hợp đồng đã ký.
+
+
+
+
+
+
+
+Nếu cần biết chính xác ngày nhận tiền, hãy đối chiếu với hợp đồng hoặc cấu hình thực tế của Merchant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nếu chưa nhận được file đối soát thì tôi cần kiểm tra gì?
+
+
+
+Trả lời: Trước tiên cần kiểm tra cấu hình nhận biên bản đối soát do hệ thống cho phép nhận qua email, sFTP hoặc API, trong đó mặc định là email.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Vào Cài đặt > Cấu hình đối soát – quyết toán.
+
+
+
+
+
+
+
+Tại tab “Đối soát”, kiểm tra lại hình thức nhận file đối soát.
+
+
+
+
+
+
+
+Kiểm tra đúng email nhận biên bản, email CC (nếu có), hoặc cấu hình sFTP/API nếu Merchant dùng các hình thức này.
+
+
+
+
+
+
+
+Lưu lại cấu hình nếu có thay đổi.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Nếu cấu hình email sai hoặc chưa cập nhật, Merchant có thể không nhận được file đối soát.
+
+
+
+
+
+
+
+Thông tin thời điểm thu phí và chu kỳ đối soát cũng được hiển thị tại màn hình này.
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.4 Thay đổi số tài khoản nhận tiền
+
+
+
+
+
+Tôi thay đổi số tài khoản nhận tiền như thế nào?
+
+
+
+Trả lời: Vào màn hình Đối soát – quyết toán, tab Tài khoản thanh toán, sau đó tạo yêu cầu thêm mới/thay thế tài khoản và gửi phê duyệt.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Mở menu Đối soát – quyết toán và chọn tab “Tài khoản thanh toán”.
+
+
+
+
+
+
+
+Bấm “Thêm tài khoản”.
+
+
+
+
+
+
+
+Nhập số tài khoản, chọn ngân hàng, khai báo tên viết tắt hoặc tài khoản uỷ quyền nếu cần.
+
+
+
+
+
+
+
+Nếu là tài khoản uỷ quyền, nhập số giấy uỷ quyền và tải lên file giấy tờ.
+
+
+
+
+
+
+
+Nếu thay thế tài khoản cũ, chọn tài khoản đang hoạt động cần thay thế.
+
+
+
+
+
+
+
+Bấm “Thêm tài khoản”, sau đó bấm “Gửi yêu cầu” để gửi phê duyệt và ký phụ lục.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Có thể thêm nhiều số tài khoản trong một lần gửi yêu cầu.
+
+
+
+
+
+
+
+Trong lúc yêu cầu đang xử lý phụ lục, Merchant không được tạo yêu cầu thêm mới khác.
+
+
+
+
+
+
+
+Trạng thái tài khoản có thể là Khởi tạo, Chờ duyệt, Từ chối, Đã duyệt, Đang hoạt động hoặc Khoá.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.5 Hướng dẫn tạo payment link
+
+
+
+
+
+Tôi tạo payment link như thế nào?
+
+
+
+Trả lời: Vào menu Payment links > Danh sách Payment link, sau đó bấm “Tạo link thanh toán” và nhập các thông tin bắt buộc theo màn hình.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Mở menu Payment links và vào “Danh sách Payment link”.
+
+
+
+
+
+
+
+Bấm “Tạo link thanh toán”.
+
+
+
+
+
+
+
+Nhập các thông tin được yêu cầu; các trường có dấu * là bắt buộc.
+
+
+
+
+
+
+
+Bấm “Lưu” để tạo link.
+
+
+
+
+
+
+
+Sau khi tạo thành công, sao chép link và gửi cho khách hàng thanh toán.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Màn hình chi tiết link cho phép xem thao tác copy link, hình thức thanh toán, trạng thái thanh toán, mã đơn hàng và thông tin khách hàng nếu có.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.6 Lỗi thanh toán
+
+
+
+
+
+Khách hàng thường gặp lỗi thanh toán nào và xử lý ra sao?
+
+
+
+Trả lời: 
+
+
+
+List các lỗi thường gặp (bổ sung sau)
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Nếu lỗi phát sinh khi khách thanh toán qua link hoặc QR, trước tiên nên kiểm tra lại đúng link/QR và trạng thái đơn hàng.
+
+
+
+
+
+
+
+Nếu giao dịch đã phát sinh nhưng cần làm rõ, Merchant có thể vào Danh sách ticket để tạo khiếu nại hoặc phản hồi tra soát.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.7 Cấu hình đối tượng chịu phí
+
+
+
+
+
+Tôi cấu hình đối tượng chịu phí ở đâu?
+
+
+
+Trả lời: Tại mục Cấu hình dịch vụ phương thức. Tại từng phương thức, Merchant được phép cấu hình tỷ lệ khách hàng chịu phí thanh toán và tỷ lệ khách hàng chịu phí hoàn/huỷ hoặc phí chuyển đổi trả góp tùy từng loại dịch vụ.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Mở menu “Cấu hình dịch vụ phương thức”.
+
+
+
+
+
+
+
+Chọn đúng tab dịch vụ: Trả thẳng, Trả góp thẻ tín dụng hoặc Trả chậm – BNPL.
+
+
+
+
+
+
+
+Nhập tỷ lệ khách hàng chịu phí theo đúng trường cấu hình trên màn hình.
+
+
+
+
+
+
+
+Bấm “Lưu” để hoàn tất.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Ở Trả thẳng: có thể cấu hình tỷ lệ khách hàng chịu phí thanh toán và phí hoàn/huỷ.
+
+
+
+
+
+
+
+Ở Trả góp thẻ tín dụng: có thể cấu hình tỷ lệ phí thanh toán, phí hoàn thanh toán và phí chuyển đổi theo từng gói vay.
+
+
+
+
+
+
+
+Ở BNPL: có thể cấu hình phần trả trước, trả sau và các tỷ lệ phí liên quan.
+
+
+
+
+
+
+
+Tỷ lệ khách hàng chịu phí hoàn hủy (hệ thống đang đặt mặc định là 0%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Menu Danh mục
+
+
+
+
+
+
+
+
+
+1.Đăng ký tài khoản
+
+
+
+
+
+Tôi đăng ký tài khoản Merchant cá nhân, hộ kinh doanh hoặc doanh nghiệp như thế nào?
+
+
+
+Trả lời: Luồng đăng ký bắt đầu bằng việc tạo tài khoản, xác thực OTP và sau đó khai báo hồ sơ theo đúng mô hình kinh doanh.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Truy cập website b2b.baokim.vn và bấm “Đăng ký ngay!”.
+
+
+
+
+
+
+
+Nhập tên tài khoản, số điện thoại, họ tên/tên tổ chức, email, mật khẩu, xác thực mật khẩu và mã giới thiệu nếu có; tick đồng ý điều khoản rồi bấm “Tiếp tục”.
+
+
+
+
+
+
+
+Chọn hình thức nhận OTP qua email hoặc số điện thoại, nhập OTP trong 3 phút rồi bấm “Xác nhận”.
+
+
+
+
+
+
+
+Đăng nhập tài khoản vừa tạo để bắt đầu khai báo hồ sơ.
+
+
+
+
+
+
+
+Chọn mô hình kinh doanh: Cá nhân / Hộ kinh doanh / Doanh nghiệp – Tổ chức.
+
+
+
+
+
+
+
+Khai báo lĩnh vực kinh doanh, nhu cầu sử dụng, phương thức thanh toán muốn dùng và hình thức kết nối thanh toán.
+
+
+
+
+
+
+
+Chọn ít nhất một kênh tích hợp: website/app, payment link qua nền tảng bán hàng, thanh toán tại cửa hàng hoặc phần mềm bán hàng sẵn có.
+
+
+
+
+
+
+
+Tải lên giấy tờ định danh theo đúng mô hình kinh doanh, xác nhận lại dữ liệu hệ thống đọc được và hoàn tất hồ sơ.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Cá nhân chỉ dùng phương thức trả thẳng, bao gồm: Tài khoản ảo (VA tĩnh/VA động), Thẻ ATM và Tài khoản ngân hàng, VNPAYQR)
+
+
+
+
+
+
+
+Hộ kinh doanh và Doanh nghiệp/Tổ chức có thể đăng ký thêm trả góp thẻ tín dụng và BNPL.
+
+
+
+
+
+
+
+Sau khi hoàn tất, Baokim sẽ thẩm định hồ sơ và thông báo kết quả.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tôi tạo tài khoản cửa hàng ở đâu?
+
+
+
+Trả lời: Tại mục “Quản lý cửa hàng” cho phép Merchant thêm mới cửa hàng phục vụ vận hành trên hệ thống.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Vào Kênh bán hàng > Quản lý cửa hàng.
+
+
+
+
+
+
+
+Bấm “Thêm mới”.
+
+
+
+
+
+
+
+Nhập tên cửa hàng, ngành nghề kinh doanh, chọn chi nhánh, số điện thoại và địa chỉ cửa hàng.
+
+
+
+
+
+
+
+Bấm “Xác nhận” để lưu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Quản lý đơn hàng
+
+
+
+
+
+Tôi xem giao dịch tại mục Quản lý đơn hàng như thế nào?
+
+
+
+Trả lời: Màn hình Quản lý đơn hàng là nơi xem toàn bộ giao dịch/đơn hàng của Merchant và tra cứu chi tiết từng đơn.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Vào Quản lý đơn hàng > Danh sách đơn hàng.
+
+
+
+
+
+
+
+Dùng thanh tìm kiếm và bộ lọc để tìm đúng đơn cần xem.
+
+
+
+
+
+
+
+Bấm mã đơn BK để mở Chi tiết đơn hàng và kiểm tra toàn bộ thông tin liên quan.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tôi duyệt đơn như thế nào?
+
+
+
+Trả lời: Có thể duyệt tại màn hình danh sách hoặc trong chi tiết đơn hàng.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Tại danh sách đơn hàng: lọc trạng thái = Chờ duyệt, bấm “Duyệt đơn”, rồi xác nhận.
+
+
+
+
+
+
+
+Hoặc tại chi tiết đơn hàng: mở đơn, bấm “Duyệt”, rồi xác nhận.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tôi từ chối đơn như thế nào?
+
+
+
+Trả lời: Có thể từ chối tại màn hình danh sách hoặc trong chi tiết đơn hàng.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Tại danh sách đơn hàng: lọc trạng thái = Chờ duyệt, bấm “Từ chối”, rồi xác nhận.
+
+
+
+
+
+
+
+Hoặc tại chi tiết đơn hàng: mở đơn, bấm “Từ chối”, rồi xác nhận.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tôi hoàn hoặc huỷ đơn như thế nào?
+
+
+
+Trả lời: Thao tác nằm ở Chi tiết đơn hàng và cách xử lý phụ thuộc loại đơn: trả thẳng, BNPL hoặc trả góp.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Mở chi tiết đơn hàng bằng cách bấm mã đơn BK.
+
+
+
+
+
+
+
+Bấm “Hoàn”.
+
+
+
+
+
+
+
+Thực hiện đúng luồng của từng loại đơn như hướng dẫn ở module Hoàn/hủy đơn hàng.
+
+
+
+
+
+
+
+Nhập lý do bắt buộc và xác nhận thao tác.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Biến động số dư
+
+
+
+
+
+Tôi xem biến động số dư ở đâu?
+
+
+
+Trả lời: Vào menu Quản lý biến động số dư > Danh sách biến động số dư. Màn hình này hiển thị các nghiệp vụ liên quan đến đơn hàng làm thay đổi số dư của Merchant.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Mở “Danh sách biến động số dư”.
+
+
+
+
+
+
+
+Xem các trường chính: phân loại, mã đơn, trạng thái, ghi nhận, giá trị, số dư cuối, thời gian và ghi chú.
+
+
+
+
+
+
+
+Dùng bộ lọc để tra cứu theo phân loại, mã đơn, trạng thái, kiểu ghi nhận hoặc thời gian.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Phân loại gồm các loại như Thanh toán, Hoàn, Chi, Bỏ tạm giữ.
+
+
+
+
+
+
+
+Ghi nhận gồm Cộng tiền, Trừ tiền, Tạm giữ.
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. Đối soát – quyết toán
+
+
+
+
+
+Tôi cấu hình đối soát và quyết toán ở đâu?
+
+
+
+Trả lời: Vào Cài đặt > Cấu hình đối soát – quyết toán. Tại đây có các tab Đối soát, Quyết toán, Hoá đơn, Tài khoản thanh toán và Nhận tiền theo tài khoản.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Tab Đối soát: chọn hình thức nhận biên bản (email/sFTP/API), email nhận và email CC.
+
+
+
+
+
+
+
+Tab Quyết toán: xem phương thức, chu kỳ quyết toán và quy định tạm giữ.
+
+
+
+
+
+
+
+Tab Hoá đơn: xem thông tin nhận hoá đơn và bật/tắt nhận hoá đơn.
+
+
+
+
+
+
+
+Tab Tài khoản thanh toán: xem danh sách tài khoản nhận tiền và đặt tài khoản mặc định.
+
+
+
+
+
+
+
+Tab Nhận tiền theo tài khoản: chọn nhận tiền về tài khoản mặc định hoặc cấu hình theo từng kênh bán hàng.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tôi thay đổi số tài khoản nhận tiền như thế nào?
+
+
+
+Trả lời: Thực hiện ở tab Tài khoản thanh toán của màn hình Đối soát – quyết toán bằng cách thêm tài khoản mới, chọn thay thế tài khoản cũ nếu cần, rồi gửi yêu cầu phê duyệt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. Cấu hình dịch vụ phương thức/đối tượng chịu phí
+
+
+
+
+
+Tôi cấu hình dịch vụ phương thức và đối tượng chịu phí như thế nào?
+
+
+
+Trả lời: Vào menu Cấu hình dịch vụ phương thức. Tại đây hệ thống tách thành 3 tab chính: Trả thẳng, Trả góp thẻ tín dụng và Trả chậm – BNPL.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Tab Trả thẳng: cấu hình giá trị giao dịch tối thiểu/tối đa, tỷ lệ khách hàng chịu phí thanh toán, tỷ lệ phí hoàn/huỷ và bật/tắt phương thức.
+
+
+
+
+
+
+
+Tab Trả góp thẻ tín dụng: cấu hình phí thanh toán, phí hoàn thanh toán, kỳ hạn, ngân hàng/tổ chức tài chính và phí chuyển đổi theo từng gói vay.
+
+
+
+
+
+
+
+Tab BNPL: cấu hình khoản trả trước, khoản trả sau, bật/tắt tổ chức tài chính và các thông số chi tiết.
+
+
+
+
+
+
+
+Sau khi chỉnh xong, bấm “Lưu”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6. Paymentlink
+
+
+
+
+
+Tôi sử dụng Payment Link như thế nào?
+
+
+
+Trả lời: Module Payment Link hỗ trợ tạo link thanh toán để gửi trực tiếp cho khách hàng và theo dõi trạng thái thanh toán của link.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Vào Payment links > Danh sách Payment link.
+
+
+
+
+
+
+
+Bấm “Tạo link thanh toán”, nhập các trường bắt buộc và bấm “Lưu”.
+
+
+
+
+
+
+
+Sao chép link đã tạo để gửi khách.
+
+
+
+
+
+
+
+Khi cần kiểm tra, mở “Xem chi tiết” để xem hình thức thanh toán, trạng thái, mã đơn và thông tin khách hàng.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. Tra soát khiếu nại
+
+
+
+
+
+Tôi tạo khiếu nại hoặc phản hồi tra soát như thế nào?
+
+
+
+Trả lời: Tra soát khiếu nại có 3 phần như sau: tạo khiếu nại, phản hồi khiếu nại và phản hồi tra soát.
+
+
+
+Cách làm nhanh:
+
+
+
+
+
+
+
+Tạo khiếu nại: vào Quản lý đơn hàng > Danh sách đơn hàng, chọn ít nhất 1 đơn, bấm “Tạo khiếu nại”, nhập phân loại, tải file/chứng từ nếu có, nhập ghi chú và gửi.
+
+
+
+
+
+
+
+Phản hồi khiếu nại: vào Danh sách ticket, lọc Phân loại = Khiếu nại, mở chi tiết và nhập phản hồi.
+
+
+
+
+
+
+
+Phản hồi tra soát: vào Danh sách ticket, lọc Phân loại = Tra soát, mở chi tiết, tải chứng từ được yêu cầu, nhập phản hồi chung rồi gửi hoặc lưu nháp.
+
+
+
+Điểm cần nhớ:
+
+
+
+
+
+
+
+Tra soát là yêu cầu do Baokim gửi tới Merchant khi nhận được yêu cầu tra soát từ nhà cung cấp liên quan tới giao dịch thành công.
+
+
+
+
+
+
+
+Màn hình chi tiết ticket hiển thị lịch sử phản hồi giữa Merchant và Baokim.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. FAQ
+
+
+
+
+
+
+
+
+
