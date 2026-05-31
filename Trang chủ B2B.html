@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baokim Portal B2B — Giải pháp All-in-one cho SMEs / Shop / Streamers</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --green: #2BB14C;
+      --green-dark: #199939;
+      --teal: #0E8C9A;
+      --teal-dark: #0A6B76;
+      --navy: #155B6E;
+      --navy-dark: #0E4757;
+      --wave: linear-gradient(135deg, #1FA67D 0%, #117B79 60%, #0E5F70 100%);
+      --ink: #0F1A26;
+      --ink-2: #2C3A4D;
+      --ink-3: #5A6781;
+      --ink-4: #8A95A8;
+      --line: #E2E8F0;
+      --line-2: #ECEFF5;
+      --bg: #FFFFFF;
+      --hero-bg-top: #FFFFFF;
+      --hero-bg-bottom: #D9E9F4;
+
+      --hdsd-orange: #F7A623;
+      --hdsd-orange-dark: #D88A0E;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ============ TOP UTILITY BAR ============ */
+    .top-bar {
+      background: #fff;
+      border-bottom: 1px solid var(--line-2);
+    }
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 14px 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+    .logo-mark {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: var(--green);
+      display: grid; place-items: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: -0.01em;
+      position: relative;
+    }
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      width: 16px; height: 8px;
+      border: 3px solid #fff;
+      border-top: 0; border-right: 0;
+      transform: rotate(-45deg) translate(-1px, -3px);
+      border-bottom-left-radius: 2px;
+    }
+    .logo-text {
+      display: flex; flex-direction: column; line-height: 1.1;
+    }
+    .logo-text .b { font-weight: 700; font-size: 17px; color: var(--green); letter-spacing: -0.01em; }
+    .logo-text .s { font-size: 11.5px; color: var(--ink-3); font-weight: 500; }
+
+    .util-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: auto;
+    }
+    .util-nav a {
+      color: var(--ink-2);
+      font-size: 14.5px;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: color 120ms ease, background 120ms ease;
+    }
+    .util-nav a:hover { color: var(--teal); background: #F0F9FB; }
+    .util-nav a.active-link { color: var(--teal); font-weight: 600; }
+
+    /* HDSD button — pop element */
+    .util-nav .hdsd-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #FFF6E5;
+      color: #8A5B00;
+      border: 1px solid #F4D592;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 150ms ease;
+      position: relative;
+    }
+    .util-nav .hdsd-btn::before {
+      content: "MỚI";
+      position: absolute;
+      top: -8px; right: -6px;
+      background: var(--hdsd-orange);
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+      box-shadow: 0 2px 4px rgba(247,166,35,0.4);
+    }
+    .util-nav .hdsd-btn:hover {
+      background: var(--hdsd-orange);
+      color: #fff;
+      border-color: var(--hdsd-orange-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(247,166,35,0.35);
+    }
+    .util-nav .hdsd-btn svg { flex: 0 0 auto; }
+
+    .util-nav .login {
+      color: var(--teal);
+      font-weight: 600;
+    }
+    .util-nav .signup {
+      background: var(--green);
+      color: #fff;
+      padding: 9px 20px;
+      border-radius: 999px;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(43,177,76,0.3);
+      transition: all 150ms ease;
+    }
+    .util-nav .signup:hover {
+      background: var(--green-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(43,177,76,0.4);
+    }
+
+    .lang-select {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-2);
+      background: #fff;
+    }
+
+    /* ============ PRODUCT NAV BAR ============ */
+    .prod-nav {
+      background: var(--navy);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    .prod-nav-inner {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      gap: 8px;
+    }
+    .prod-nav a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 18px 24px;
+      transition: background 120ms ease, color 120ms ease;
+      position: relative;
+    }
+    .prod-nav a:hover { background: rgba(255,255,255,0.08); }
+    .prod-nav a.active::after {
+      content: ""; position: absolute;
+      left: 24px; right: 24px; bottom: 0;
+      height: 3px; background: var(--green);
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      position: relative;
+      background:
+        radial-gradient(900px 400px at 90% 10%, rgba(14,140,154,0.08), transparent 70%),
+        linear-gradient(180deg, var(--hero-bg-top) 0%, var(--hero-bg-bottom) 100%);
+      padding: 90px 0 200px;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: ""; position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(14,91,110,0.08) 1px, transparent 1.5px);
+      background-size: 28px 28px;
+      mask-image: radial-gradient(ellipse 60% 60% at 80% 50%, #000 30%, transparent 80%);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-size: 60px;
+      line-height: 1.08;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 26px;
+      color: var(--ink);
+    }
+    .hero-text h1 .hl {
+      background: linear-gradient(120deg, var(--teal) 0%, var(--green) 100%);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-text p.lead {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      margin: 0 0 38px;
+      max-width: 520px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 15.5px;
+      border: 2px solid transparent;
+      transition: all 150ms ease;
+    }
+    .btn-primary {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green);
+      box-shadow: 0 4px 14px rgba(43,177,76,0.3);
+    }
+    .btn-primary:hover {
+      background: var(--green-dark);
+      border-color: var(--green-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(43,177,76,0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--teal);
+      border-color: var(--teal);
+    }
+    .btn-outline:hover {
+      background: var(--teal);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .btn-hdsd-hero {
+      background: #fff;
+      color: var(--hdsd-orange-dark);
+      border-color: var(--hdsd-orange);
+      box-shadow: 0 2px 8px rgba(247,166,35,0.2);
+    }
+    .btn-hdsd-hero:hover {
+      background: var(--hdsd-orange);
+      color: #fff;
+      border-color: var(--hdsd-orange);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(247,166,35,0.35);
+    }
+
+    /* HERO illustration placeholder (right side) */
+    .hero-visual {
+      position: relative;
+      aspect-ratio: 1.1 / 1;
+    }
+    .hv-card {
+      position: absolute;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 12px 40px rgba(14,91,110,0.15);
+      padding: 18px;
+      border: 1px solid var(--line-2);
+    }
+    .hv-main {
+      inset: 8% 5% 8% 5%;
+      background: linear-gradient(140deg, #fff 0%, #F4FBFC 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .hv-row {
+      display: flex; gap: 12px; align-items: center;
+      padding: 12px 14px;
+      background: #F8FAFC;
+      border-radius: 12px;
+    }
+    .hv-row .dot {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      flex: 0 0 auto;
+      display: grid; place-items: center;
+    }
+    .hv-row .dot.green { background: #E8F8EE; color: var(--green-dark); }
+    .hv-row .dot.teal  { background: #E5F4F6; color: var(--teal-dark); }
+    .hv-row .dot.orange{ background: #FFF6E5; color: var(--hdsd-orange-dark); }
+    .hv-row .lbl { display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1; }
+    .hv-row .lbl .t { font-size: 13px; color: var(--ink); font-weight: 600; }
+    .hv-row .lbl .s { font-size: 11.5px; color: var(--ink-4); }
+    .hv-row .amt { font-weight: 700; color: var(--green-dark); font-size: 14px; font-variant-numeric: tabular-nums; }
+
+    .hv-pop {
+      bottom: -8%;
+      right: -4%;
+      width: 64%;
+      padding: 14px 16px;
+      display: flex; align-items: center; gap: 12px;
+      animation: float 4s ease-in-out infinite;
+    }
+    .hv-pop .check {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--teal));
+      color: #fff; display: grid; place-items: center;
+      flex: 0 0 auto;
+    }
+    .hv-pop .body { font-size: 13px; line-height: 1.4; }
+    .hv-pop .body b { color: var(--ink); }
+    .hv-pop .body .s { color: var(--ink-3); font-size: 11.5px; }
+
+    .hv-badge {
+      top: -4%;
+      left: -2%;
+      padding: 10px 14px;
+      display: flex; align-items: center; gap: 8px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--teal-dark);
+      animation: float 4s 1.2s ease-in-out infinite;
+    }
+    .hv-badge .dot {
+      width: 8px; height: 8px; border-radius: 50%; background: var(--green);
+      box-shadow: 0 0 0 4px rgba(43,177,76,0.2);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* ============ WAVE TRANSITION ============ */
+    .wave-section {
+      position: relative;
+      background: var(--wave);
+      margin-top: -160px;
+      padding-top: 200px;
+      padding-bottom: 80px;
+      color: #fff;
+      overflow: hidden;
+    }
+    .wave-shape {
+      position: absolute;
+      top: -1px; left: 0; right: 0;
+      width: 100%; height: 180px;
+      display: block;
+    }
+    .wave-section::after {
+      content: "?";
+      position: absolute;
+      right: -40px; bottom: -80px;
+      font-size: 480px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.06);
+      line-height: 1;
+      pointer-events: none;
+      font-family: 'Be Vietnam Pro';
+    }
+
+    .wave-inner {
+      position: relative;
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .wave-inner h2 {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin: 0 0 14px;
+    }
+    .wave-inner p {
+      color: rgba(255,255,255,0.85);
+      font-size: 16px;
+      margin: 0 0 32px;
+    }
+    .scroll-down {
+      display: inline-grid;
+      place-items: center;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+      animation: bob 2s ease-in-out infinite;
+      margin-top: 8px;
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
+    /* ============ FLOATING CHAT BUTTONS ============ */
+    .floats {
+      position: fixed;
+      right: 24px;
+      bottom: 30px;
+      display: flex; flex-direction: column; gap: 12px;
+      z-index: 40;
+    }
+    .float-btn {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(15,26,38,0.18);
+      display: grid; place-items: center;
+      transition: transform 150ms ease, box-shadow 150ms ease;
+      border: 0;
+      position: relative;
+    }
+    .float-btn:hover { transform: scale(1.08); box-shadow: 0 10px 24px rgba(15,26,38,0.25); }
+    .float-btn.zalo {
+      background: #0093EE;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: -0.01em;
+    }
+    .float-btn.bk {
+      background: #fff;
+    }
+    .float-btn.bk::after {
+      content: "";
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--green);
+      display: block;
+      position: relative;
+    }
+    .float-btn.bk::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 12px; height: 6px;
+      border: 2.5px solid #fff;
+      border-top: 0; border-right: 0;
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    .float-btn.hdsd {
+      background: var(--hdsd-orange);
+      color: #fff;
+    }
+    .float-btn .tooltip {
+      position: absolute;
+      right: calc(100% + 12px);
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--ink);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 8px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 120ms ease;
+    }
+    .float-btn .tooltip::after {
+      content: "";
+      position: absolute;
+      left: 100%; top: 50%; transform: translateY(-50%);
+      border: 5px solid transparent;
+      border-left-color: var(--ink);
+    }
+    .float-btn:hover .tooltip { opacity: 1; }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { max-width: 480px; margin: 0 auto; width: 100%; }
+      .hero-text h1 { font-size: 44px; }
+      .prod-nav-inner { overflow-x: auto; }
+      .prod-nav a { white-space: nowrap; padding: 16px 16px; font-size: 13px; }
+      .util-nav { gap: 2px; }
+      .util-nav a { padding: 8px 10px; font-size: 13.5px; }
+    }
+    @media (max-width: 720px) {
+      .util-nav a:not(.hdsd-btn):not(.login):not(.signup) { display: none; }
+      .util-nav .lang-select { display: none; }
+      .hero { padding: 60px 0 160px; }
+      .hero-text h1 { font-size: 34px; }
+      .wave-inner h2 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ TOP UTILITY BAR ============ -->
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <a class="logo" href="#">
+        <div class="logo-mark">BK</div>
+        <div class="logo-text">
+          <span class="b">baokim</span>
+          <span class="s">Portal B2B</span>
+        </div>
+      </a>
+
+      <nav class="util-nav">
+        <a href="#" class="active-link">Về Baokim.vn</a>
+        <a href="#">Tin tức</a>
+
+        <!-- ★ HDSD BUTTON — entry to Help Center ★ -->
+        <a href="Trung tâm trợ giúp.html" class="hdsd-btn" title="Hướng dẫn sử dụng Portal B2B">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          Hướng dẫn
+        </a>
+
+        <a href="#">Liên hệ</a>
+        <a href="#" class="login">Đăng nhập</a>
+        <a href="#" class="signup">Đăng ký</a>
+        <span class="lang-select">
+          🇻🇳 VN
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ PRODUCT NAV ============ -->
+  <nav class="prod-nav">
+    <div class="container prod-nav-inner">
+      <a href="#" class="active">Cổng thanh toán điện tử</a>
+      <a href="#">Trả góp</a>
+      <a href="#">Tối ưu bán hàng online</a>
+      <a href="#">Vận chuyển</a>
+      <a href="#">Hàng hoá số</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Giải pháp <span class="hl">All-in-one</span> cho SMEs / Shop / Streamers</h1>
+        <p class="lead">B2B là giải pháp All-in-one cho các doanh nghiệp vừa và nhỏ, các shop bán hàng online và các streamer, giúp bạn tối ưu toàn bộ quá trình bán hàng online mà không mất nhiều nguồn lực kỹ thuật, vận hành.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#">
+            Trải nghiệm ngay
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+          </a>
+          <a class="btn btn-outline" href="#">
+            Cần tư vấn
+          </a>
+          <!-- ★ Tertiary HDSD CTA ★ -->
+          <a class="btn btn-hdsd-hero" href="Trung tâm trợ giúp.html">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            Xem hướng dẫn sử dụng
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hv-card hv-badge">
+          <span class="dot"></span>
+          Đang xử lý 12 đơn
+        </div>
+
+        <div class="hv-card hv-main">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:0 6px 6px;border-bottom:1px solid var(--line-2);">
+            <div style="font-weight:700;font-size:14px;color:var(--ink);">Hôm nay · 27.05.2026</div>
+            <div style="font-size:11.5px;color:var(--ink-4);text-transform:uppercase;letter-spacing:0.06em;">Số dư khả dụng</div>
+          </div>
+          <div style="padding:0 6px;">
+            <div style="font-size:13px;color:var(--ink-3);margin-bottom:4px;">Tổng nhận hôm nay</div>
+            <div style="font-size:28px;font-weight:700;color:var(--green-dark);font-family:'Be Vietnam Pro';font-variant-numeric:tabular-nums;letter-spacing:-0.01em;">
+              ₫ 48,725,000
+            </div>
+          </div>
+          <div class="hv-row">
+            <div class="dot green">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <div class="lbl">
+              <span class="t">Đơn BK20260527-0481</span>
+              <span class="s">Thẻ ATM nội địa · 2 phút trước</span>
+            </div>
+            <span class="amt">+ ₫ 2,450,000</span>
+          </div>
+          <div class="hv-row">
+            <div class="dot teal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"></path><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"></path></svg>
+            </div>
+            <div class="lbl">
+              <span class="t">Payment link PL-3920</span>
+              <span class="s">Đã thanh toán · KH: Nguyễn T. Anh</span>
+            </div>
+            <span class="amt">+ ₫ 1,890,000</span>
+          </div>
+          <div class="hv-row">
+            <div class="dot orange">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"></path><path d="M3 13a9 9 0 1 0 3-7.7L3 7"></path></svg>
+            </div>
+            <div class="lbl">
+              <span class="t">Hoàn đơn BK20260527-0476</span>
+              <span class="s">VNPAYQR · 5 phút trước</span>
+            </div>
+            <span class="amt" style="color:var(--hdsd-orange-dark)">− ₫ 350,000</span>
+          </div>
+        </div>
+
+        <div class="hv-card hv-pop">
+          <div class="check">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <div class="body">
+            <b>Quyết toán T+1 thành công</b>
+            <div class="s">VCB · 8901xxx234 · 6:00 sáng nay</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave shape continues into next section -->
+  </section>
+
+  <!-- ============ WAVE TRANSITION ============ -->
+  <section class="wave-section">
+    <svg class="wave-shape" viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,80 C220,160 480,10 720,80 C960,150 1200,30 1440,90 L1440,0 L0,0 Z" fill="#D9E9F4"></path>
+    </svg>
+    <div class="container wave-inner">
+      <h2>Bạn gặp quá nhiều vấn đề khi vận hành kinh doanh online?</h2>
+      <p>Baokim B2B gom toàn bộ thanh toán, đối soát, quyết toán và quản trị đơn hàng về một nơi. Mọi câu hỏi vận hành đều có sẵn trong <a href="Trung tâm trợ giúp.html" style="color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:600;">Hướng dẫn sử dụng</a>.</p>
+      <a class="scroll-down" href="#" aria-label="Cuộn xuống">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FLOATING CHAT ============ -->
+  <div class="floats">
+    <a href="Trung tâm trợ giúp.html" class="float-btn hdsd" aria-label="Hướng dẫn sử dụng">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+      </svg>
+      <span class="tooltip">Hướng dẫn sử dụng</span>
+    </a>
+    <button class="float-btn zalo" aria-label="Chat Zalo">
+      Zalo
+      <span class="tooltip">Chat qua Zalo</span>
+    </button>
+    <button class="float-btn bk" aria-label="Chat Baokim">
+      <span class="tooltip">Chat với Baokim</span>
+    </button>
+  </div>
+
+</body>
+</html>
